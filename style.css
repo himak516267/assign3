@@ -1,5 +1,20 @@
+
+header{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+}
+header div img{
+width: 40%;
+height: auto;
+display: block;
+margin: left:auto;
+}
+header div h1{
+  margin-right: auto;
+}
 .banner{
-  width: 96;
+  width: 96%;
   margin: 0 auto;
 box-sizing: border-box;
 }
@@ -9,12 +24,13 @@ box-sizing: border-box;
 }
 .banner2{
 display: flex;
-  width: 96;
+  width: 96%;
   margin: 0 auto;
 flex-direction: row;
 justify-content: center;
 box-sizing: border-box;
 }
+
 .child{
   width: 47%;
 }
@@ -54,4 +70,55 @@ box-sizing: border-box;
   width: 46;
   margin: 0 auto;
 box-sizing: border-box;
+}
+.child7{
+  width:23.5%;
+}
+.child7 img{
+  width: 100%;
+  height: auto;
+}
+.banner2Pro{
+display: flex;
+width: 96;
+margin: 0 auto;
+flex-direction: row;
+justify-content: center;
+box-sizing: border-box;
+}
+
+@media only screen and (min-width:320px) and (max-width:767px){
+.banner2Pro{
+display: flex;
+width: 96;
+margin: 0 auto;
+flex-direction: column;
+justify-content: center;
+box-sizing: border-box;
+}
+.child7{
+  width: 100%;
+}
+.child7 img{
+  width: 100%;
+  height: auto;
+}
+}
+@media only screen and (min-width:768px) and (max-width:1023px){
+.banner2Pro{
+display: flex;
+width: 96;
+margin: 0 auto;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+box-sizing: border-box;
+}
+.child7{
+  width: 47%;
+}
+.child7 img{
+  width: 100%;
+  height: auto;
+}
 }
